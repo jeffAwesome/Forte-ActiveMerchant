@@ -26,7 +26,7 @@ module ActiveMerchant #:nodoc:
             "Address1" => options[:address],
             "City" => options[:city],
             "State" => options[:state],
-            "PhoneNumber" => options[:phoneNumber],
+            "PhoneNumber" => options[:phone_number],
             "EmailAddress" => options[:email]
           }
           message = {"client" => client}
@@ -42,7 +42,7 @@ module ActiveMerchant #:nodoc:
             "Address1" => options[:address],
             "City" => options[:city],
             "State" => options[:state],
-            "PhoneNumber" => options[:phoneNumber],
+            "PhoneNumber" => options[:phone_number],
             "EmailAddress" => options[:email]
           }
           message = {"client" => client}
