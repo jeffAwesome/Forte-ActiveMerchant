@@ -125,8 +125,7 @@ module ActiveMerchant #:nodoc:
           payment["AcctHolderName"] = options[:acct_holder_name]
           payment["EcAccountNumber"] = options[:account_number]
           payment["EcAccountTRN"] = options[:routing_number]
-          #payment["EcAccountType"] = E_CHECK_TYPES[options[:account_type]]
-          payment["EcAccountType"] = "CHECKING"
+          payment["EcAccountType"] = E_CHECK_TYPES[options[:account_type]]
           payment
         end
 
