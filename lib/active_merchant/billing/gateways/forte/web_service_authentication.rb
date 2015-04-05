@@ -22,7 +22,12 @@ module ActiveMerchant #:nodoc:
             "MerchantID" =>  @options[:merchant_id],
             "FirstName" => options[:first_name],
             "LastName" => options[:last_name],
-            "CompanyName" => options[:company_name]
+            "CompanyName" => options[:company_name],
+            "Address1" => options[:address],
+            "City" => options[:city],
+            "State" => options[:state],
+            "PhoneNumber" => options[:phoneNumber],
+            "EmailAddress" => options[:email]
           }
           message = {"client" => client}
           perform_soap_request __callee__, message
@@ -33,7 +38,12 @@ module ActiveMerchant #:nodoc:
             "MerchantID" =>  @options[:merchant_id],
             "ClientID" => options[:client_id],
             "FirstName" => options[:first_name],
-            "LastName" => options[:last_name]
+            "LastName" => options[:last_name],
+            "Address1" => options[:address],
+            "City" => options[:city],
+            "State" => options[:state],
+            "PhoneNumber" => options[:phoneNumber],
+            "EmailAddress" => options[:email]
           }
           message = {"client" => client}
           perform_soap_request __callee__, message
